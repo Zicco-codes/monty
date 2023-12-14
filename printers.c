@@ -5,7 +5,7 @@
  * @stack: stack
  * @a: line counter
  */
-void pchar(stack_t **stack, unsigned int line_cnt)
+void pchar(stack_t **stack, unsigned int a)
 {
 	if (!stack || !(*stack))
 	{
@@ -66,5 +66,5 @@ void pint(stack_t **stack, unsigned int c)
  */
 void pall(stack_t **stack, unsigned int d __attribute__((unused)))
 {
-	print_stack(*stack);
+	p_stack(*stack);
 }
