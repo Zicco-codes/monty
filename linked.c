@@ -45,7 +45,7 @@ size_t p_stack(const stack_t *stack)
 /**
  * node_q - adds node to stack in queue
  * @stack: stack head
- * @n: num of node
+ * @m: num of node
  *
  * Return: new node
  */
