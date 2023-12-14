@@ -12,7 +12,7 @@ void nop(stack_t **stack, unsigned int zz)
 }
 
 /**
- * err - prints usage message and exits
+ * errs - prints usage message and exits
  */
 void err(void)
 {
@@ -21,7 +21,7 @@ void err(void)
 }
 
 /**
- * f_error - prints file error message and exits
+ * f_err - prints file error message and exits
  * @argv: argv given by main
  */
 void f_error(char *argv)

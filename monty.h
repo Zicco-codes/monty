@@ -86,10 +86,10 @@ void pstr(stack_t **stack, unsigned int b);
 void rotl(stack_t **stack, unsigned int _count);
 void rotr(stack_t **stack, unsigned int _count);
 void opcode(stack_t **stack, char *str, unsigned int b);
-
+void f_error(char *argv);
 int is_digit(char *s);
 int isnum(char *s);
-
+void err(void);
 stack_t *node_add(stack_t **stack, const int n);
 stack_t *node_q(stack_t **stack, const int m);
 void stackless(stack_t *stack);
