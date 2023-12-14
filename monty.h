@@ -43,10 +43,10 @@ typedef struct instruction_s
 		{"pop", pop},\
 		{"swap", swap},\
 		{"nop", nop},\
-		{"div", _div},\
-		{"mul", _mul},\
-		{"add", _add},\
-		{"sub", _sub},\
+		{"div", divide},\
+		{"mul", mult},\
+		{"add", plus},\
+		{"sub", minus},\
 		{"mod", mod},\
 		{"pchar", pchar},\
 		{"pstr", pstr},\
@@ -70,22 +70,22 @@ help global;
 
 extern int status;
 
-void push(stack_t **stack, unsigned int line_cnt);
-void pall(stack_t **stack, unsigned int line_cnt);
-void pint(stack_t **stack, unsigned int line_cnt);
-void swap(stack_t **stack, unsigned int line_cnt);
-void pop(stack_t **stack, unsigned int line_cnt);
-void nop(stack_t **stack, unsigned int line_cnt);
-void _div(stack_t **stack, unsigned int line_cnt);
-void _add(stack_t **stack, unsigned int line_cnt);
-void _sub(stack_t **stack, unsigned int line_cnt);
-void _mul(stack_t **stack, unsigned int line_cnt);
-void mod(stack_t **stack, unsigned int line_cnt);
-void pchar(stack_t **stack, unsigned int line_cnt);
-void pstr(stack_t **stack, unsigned int line_cnt);
-void rotl(stack_t **stack, unsigned int line_count);
-void rotr(stack_t **stack, unsigned int line_count);
-void opcode(stack_t **stack, char *str, unsigned int line_cnt);
+void push(stack_t **stack, unsigned int a);
+void pall(stack_t **stack, unsigned int d);
+void pint(stack_t **stack, unsigned int c);
+void swap(stack_t **stack, unsigned int a);
+void pop(stack_t **stack, unsigned int b);
+void nop(stack_t **stack, unsigned int zz);
+void divide(stack_t **stack, unsigned int d);
+void plus(stack_t **stack, unsigned int a);
+void minus(stack_t **stack, unsigned int b);
+void mult(stack_t **stack, unsigned int c);
+void mod(stack_t **stack, unsigned int e);
+void pchar(stack_t **stack, unsigned int a);
+void pstr(stack_t **stack, unsigned int b);
+void rotl(stack_t **stack, unsigned int _count);
+void rotr(stack_t **stack, unsigned int _count);
+void opcode(stack_t **stack, char *str, unsigned int b);
 
 int is_digit(char *s);
 int isnum(char *s);
