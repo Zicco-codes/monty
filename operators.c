@@ -32,7 +32,7 @@ void minus(stack_t **stack, unsigned int b)
 
 	if (!stack || !*stack || !((*stack)->next))
 	{
-		fprintf(stderr, "L%d: can't sub, stack too short\n", a);
+		fprintf(stderr, "L%d: can't sub, stack too short\n", b);
 		status = EXIT_FAILURE;
 		return;
 	}

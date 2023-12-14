@@ -69,7 +69,7 @@ stack_t *node_q(stack_t **stack, const int m)
 		return (new);
 	}
 
-	while (current)
+	while (now)
 	{
 		if (!now->next)
 		{

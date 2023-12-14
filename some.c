@@ -18,7 +18,7 @@ void push(stack_t **stack, unsigned int a)
 
 	if (global.data_struct == 1)
 	{
-		if (!add_node(stack, atoi(global.argument)))
+		if (!node_add(stack, atoi(global.argument)))
 		{
 			return;
 			status = EXIT_FAILURE;
@@ -26,7 +26,7 @@ void push(stack_t **stack, unsigned int a)
 	}
 	else
 	{
-		if (!queue_node(stack, atoi(global.argument)))
+		if (!node_q(stack, atoi(global.argument)))
 		{
 			return;
 			status = EXIT_FAILURE;
