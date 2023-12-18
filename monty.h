@@ -44,7 +44,7 @@ typedef struct instruction_s
 		{"swap", swap},\
 		{"nop", nop},\
 		{"div", divide},\
-		{"mul", mult},\
+		{"mul", multi},\
 		{"add", plus},\
 		{"sub", minus},\
 		{"mod", mod},\
@@ -79,7 +79,7 @@ void nop(stack_t **stack, unsigned int zz);
 void divide(stack_t **stack, unsigned int d);
 void plus(stack_t **stack, unsigned int a);
 void minus(stack_t **stack, unsigned int b);
-void mult(stack_t **stack, unsigned int c);
+void multi(stack_t **stack, unsigned int c);
 void mod(stack_t **stack, unsigned int e);
 void pchar(stack_t **stack, unsigned int a);
 void pstr(stack_t **stack, unsigned int b);
